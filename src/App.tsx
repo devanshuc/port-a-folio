@@ -1,5 +1,8 @@
 import { useEffect } from "react";
 import Canvas from "./components/core/Canvas";
+import Navigation from "./components/ui/Navigation";
+import CodeView from "./components/ui/CodeView";
+import InfoPanel from "./components/ui/InfoPanel";
 import { useStore } from "./store";
 import "./App.css";
 
@@ -25,7 +28,9 @@ function App() {
   return (
     <div className="w-full h-screen overflow-hidden bg-primary">
       <Canvas />
-      {/* UI overlays will be added here in the next phase */}
+      <Navigation />
+      <CodeView />
+      <InfoPanel />
     </div>
   );
 }
