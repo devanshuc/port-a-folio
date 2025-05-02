@@ -1,84 +1,108 @@
-# Turborepo starter
+# Modern Portfolio Website
 
-This Turborepo starter is maintained by the Turborepo core team.
+A sleek, customizable portfolio website built with Next.js, Tailwind CSS, and Shadcn UI components.
 
-## Using this example
+## Features
 
-Run the following command:
+- 🎨 Clean, modern design with light/dark mode
+- 📱 Fully responsive for all devices
+- ✨ Smooth animations and transitions
+- 🧩 Modular components for easy customization
+- 📝 JSON-based content management
+- 🚀 Fast performance with Next.js
+- 🔍 SEO friendly
 
-```sh
-npx create-turbo@latest
-```
+## Tech Stack
 
-## What's inside?
+- [Next.js](https://nextjs.org/) - React framework
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS
+- [Shadcn UI](https://ui.shadcn.com/) - UI component system
+- [Framer Motion](https://www.framer.com/motion/) - Animation library
+- [Next Themes](https://github.com/pacocoursey/next-themes) - Theme management
+- [Tabler Icons](https://tabler-icons.io/) - SVG icons
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
 
-This Turborepo includes the following packages/apps:
+## Getting Started
 
-### Apps and Packages
+### Prerequisites
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+- Node.js 18.18.0 or higher
+- npm or yarn
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+### Installation
 
-### Utilities
+1. Clone the repository:
 
-This Turborepo has some additional tools already setup for you:
+   ```bash
+   git clone https://github.com/yourusername/portfolio.git
+   cd portfolio
+   ```
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+2. Install dependencies:
 
-### Build
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-To build all apps and packages, run the following command:
+3. Run the development server:
 
-```
-cd my-turborepo
-pnpm build
-```
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-### Develop
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-To develop all apps and packages, run the following command:
+## Customization
 
-```
-cd my-turborepo
-pnpm dev
-```
+### Content
 
-### Remote Caching
+All content is stored in `src/data/portfolio-data.ts`. You can update this file to customize:
 
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
+- Personal information
+- Skills
+- Experience
+- Projects
+- Education
+- Resume link
 
-Turborepo can use a technique known as [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+### Styling
 
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
+- Global styles are in `src/app/globals.css`
+- Theme customization is in `components.json`
+- Component-specific styles are in their respective files
 
-```
-cd my-turborepo
-npx turbo login
-```
+### Adding New Sections
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+1. Create a new component in `src/components/sections/`
+2. Import and add it to the page in `src/app/page.tsx`
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
+## Deployment
 
-```
-npx turbo link
-```
+### Deploying to Vercel
 
-## Useful Links
+The easiest way to deploy your portfolio:
 
-Learn more about the power of Turborepo:
+1. Create a Vercel account at [vercel.com](https://vercel.com)
+2. Connect your GitHub repository
+3. Deploy with a single click
 
-- [Tasks](https://turborepo.com/docs/crafting-your-repository/running-tasks)
-- [Caching](https://turborepo.com/docs/crafting-your-repository/caching)
-- [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching)
-- [Filtering](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters)
-- [Configuration Options](https://turborepo.com/docs/reference/configuration)
-- [CLI Usage](https://turborepo.com/docs/reference/command-line-reference)
+### Custom Domain
+
+To use your own domain:
+
+1. Purchase a domain from a provider
+2. Add it to your Vercel project settings
+3. Follow Vercel's instructions to configure DNS settings
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- [Shadcn UI](https://ui.shadcn.com/) for the beautiful component system
+- [Next.js](https://nextjs.org/) team for the amazing framework
